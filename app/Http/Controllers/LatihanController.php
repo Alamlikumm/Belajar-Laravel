@@ -17,20 +17,20 @@ class LatihanController extends Controller
     public function tambah()
     {
         $jumlah = 0;
-        // $title = 'Penjumlahan';
+        $title = 'Penjumlahan';
         // return view('tambah', ['jumlah' => $jumlah]);
-        return view('tambah', compact('jumlah'));
+        return view('tambah', compact('jumlah', 'title'));
     }
 
     public function actionTambah(Request $request)
     {
-        // $title = 'Penjumlahan';
+        $title = 'Penjumlahan';
         $angka1 = $request->angka_1;
         $angka2 = $request->input('angka_2');
 
         $jumlah = $angka1 + $angka2;
 
-        return view('tambah', compact('jumlah'));
+        return view('tambah', compact('jumlah', 'title'));
     }
 
     public function kurang()

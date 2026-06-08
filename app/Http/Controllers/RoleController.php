@@ -46,7 +46,7 @@ class RoleController extends Controller
 
         //
         Role::create($request->all());
-        Alert::success('Success!!', 'Your Role has Been Created!');
+        Alert::success('Success!', 'Your Role has Been Created!');
         // toast('Your Role Has Been Created!', 'success');
 
         return redirect()->to('role');

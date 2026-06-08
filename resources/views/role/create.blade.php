@@ -10,11 +10,11 @@
             <form action="{{ route('role.store') }}" method="post">
                 @csrf
                 <div class="mb-3">
-                    <label for="">Name</label>
+                    <label for="" class="form-label">Name</label>
                     <input type="text" class="form-control" placeholder="Enter Your Name" name="name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="">Status</label> <br>
+                    <label for="" class="form-label">Status</label> <br>
                     <input type="radio" name="is_active" value="1" class="form-check-input" checked> Active <br>
                     <input type="radio" name="is_active" value="0" class="form-check-input"> Inactive
                 </div>

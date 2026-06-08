@@ -10,15 +10,15 @@
             <form action="{{ route('user.store') }}" method="post">
                 @csrf
                 <div class="mb-3">
-                    <label for="">Name</label>
+                    <label for="" class="form-label">Name</label>
                     <input type="text" class="form-control" placeholder="Enter Your Name" name="name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="">Email</label>
+                    <label for="" class="form-label">Email</label>
                     <input type="email" class="form-control" placeholder="Enter Your Email" name="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="">Password</label>
+                    <label for="" class="form-label">Password</label>
                     <input type="password" class="form-control" placeholder="Enter Your Password" name="password" required>
                 </div>
                 <button class="btn btn-primary" type="submit">Save</button>

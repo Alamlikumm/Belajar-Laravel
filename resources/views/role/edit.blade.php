@@ -11,12 +11,12 @@
                 @csrf
                 @method('PUT')
                 <div class="mb-3">
-                    <label for="">Role Name</label>
+                    <label for="" class="form-label">Role Name</label>
                     <input type="text" class="form-control" placeholder="Enter Your Name" name="name" required
                         value="{{ $edit->name }}">
                 </div>
                 <div class="mb-3">
-                    <label for="">Status</label> <br>
+                    <label for="" class="form-label">Status</label> <br>
                     <input type="radio" name="is_active" value="1" class="form-check-input mb-2"
                         {{ $edit->is_active == 1 ? 'checked' : '' }}> Active <br>
                     <input type="radio" name="is_active" value="0" class="form-check-input"

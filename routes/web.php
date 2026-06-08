@@ -56,8 +56,10 @@ Route::post('action-logout', [LoginController::class, 'actionLogout'])->name('ac
 Route::middleware(['auth'])->group(function () {
     Route::get('dashboard', function () {
         return view('dashboard.index');
-    });
+    })->name('dashboard');
     // Didalam Resource terdapat GET, POST, PUT, DELETE, PATCH
     Route::resource('user', \App\Http\Controllers\UserController::class);
     Route::resource('role', \App\Http\Controllers\RoleController::class);
+
+    Route::resource('locker', \App\Http\Controllers\LockerController::class);
 });

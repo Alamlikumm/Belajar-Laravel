@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('title', 'Edit Student')
+@section('title', 'Student')
 @section('content')
 
     <div class="card">
         <div class="card-header">
-            <h3 class="class-title">{{ $title ?? '' }}</h3>
+            <h3 class="card-title">{{ $title ?? '' }}</h3>
         </div>
         <div class="card-body">
             <form action="{{ route('student.update', $edit->id) }}" method="post">
